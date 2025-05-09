@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
@@ -31,11 +30,7 @@ export default defineNuxtConfig({
   },
   
   content: {
-    // Content module configuration
-    documentDriven: true,
-    highlight: {
-      theme: 'github-light'
-    },
+    documentDriven: false,
     markdown: {
       remarkPlugins: ['remark-unwrap-images']
     }
@@ -59,7 +54,6 @@ export default defineNuxtConfig({
   },
   
   ui: {
-    // Opt-in to dark mode classes
     safelistColors: ['primary', 'secondary', 'accent']
   }
 })

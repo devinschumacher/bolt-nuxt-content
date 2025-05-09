@@ -18,7 +18,7 @@
           <h2 
             class="section-title"
             v-motion
-            :initial="{ opacity: A0, y: 20 }"
+            :initial="{ opacity: 0, y: 20 }"
             :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
           >Our Services</h2>
           <p 
