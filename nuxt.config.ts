@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
     '@vueuse/motion/nuxt',
-    'nuxt-icon'
+    'nuxt-icon',
+    '@nuxthq/studio'
   ],
   
   app: {
