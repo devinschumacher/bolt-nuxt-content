@@ -1,0 +1,57 @@
+{
+  "project": {
+    "name": "Apex Digital Agency",
+    "description": "Digital agency website with CMS capabilities",
+    "icon": "🚀"
+  },
+  "git": {
+    "enabled": true
+  },
+  "schema": {
+    "types": [
+      {
+        "name": "case-studies",
+        "label": "Case Studies",
+        "path": "content/case-studies",
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "description",
+            "label": "Description",
+            "type": "string",
+            "multiline": true
+          },
+          {
+            "name": "image",
+            "label": "Featured Image",
+            "type": "string",
+            "component": "media"
+          },
+          {
+            "name": "client",
+            "label": "Client Name",
+            "type": "string"
+          },
+          {
+            "name": "date",
+            "label": "Project Date",
+            "type": "date"
+          },
+          {
+            "name": "tags",
+            "label": "Tags",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
