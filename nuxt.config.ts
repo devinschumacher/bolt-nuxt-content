@@ -2,6 +2,21 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
 
+  experimental: {
+    payloadExtraction: false
+  },
+
+  vite: {
+    optimizeDeps: {
+      include: ['vue']
+    },
+    server: {
+      fs: {
+        strict: false
+      }
+    }
+  },
+
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
