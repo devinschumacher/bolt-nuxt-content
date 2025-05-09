@@ -23,5 +23,6 @@
   "devDependencies": {
     "nuxt-icon": "^0.6.0",
     "@nuxtjs/tailwindcss": "^6.9.4"
-  }
+  },
+  "packageManager": "pnpm@10.10.0"
 }
