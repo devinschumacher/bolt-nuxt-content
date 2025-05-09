@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
-  
+
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
@@ -13,6 +13,12 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@nuxthq/studio'
   ],
+
+  nitro: {
+    routeRules: {
+      '/studio/**': { proxy: 'https://content.nuxtjs.org/studio/**' }
+    }
+  },
   
   app: {
     pageTransition: { 
@@ -34,6 +40,9 @@ export default defineNuxtConfig({
     documentDriven: false,
     markdown: {
       remarkPlugins: ['remark-unwrap-images']
+    },
+    preview: {
+      api: 'https://api.nuxt.studio'
     }
   },
   
